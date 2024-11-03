@@ -34,13 +34,16 @@
     "lint-staged": "^15.2.10",
     "npm-run-all2": "^7.0.1",
     "prettier": "^3.3.3",
+    "sass": "^1.80.6",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
     "typescript": "~5.6.0",
     "vite": "^5.4.10",
     "vite-plugin-vue-devtools": "^7.5.3",
     "vue-tsc": "^2.1.6"
   },
   "engines": {
-    "node": ">= 18.12.0"
+    "node": ">= 18.20.0"
   },
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
@@ -48,8 +51,8 @@
       "pnpm run lint"
     ]
   },
-  "husky":{
-    "hooks":{
+  "husky": {
+    "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
